@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Girls by Aliyah | Hand-Drawn Digital Art Collection</title>
+    <meta name="description" content="Welcome to the Classy Girls Club. A hand-drawn collection of unique digital characters created by Aliyah, featuring individual personalities, stories, and dreams.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas Particle Background -->
+    <canvas id="starfield-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-area">
+                <img src="assets/logo.jpg" alt="Classy Girls Logo" class="header-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-fallback" style="display: none;">Classy Girls</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#artist">The Artist</a></li>
+                    <li><a href="#sketchbook">Sketchbook</a></li>
+                    <li><a href="#girls">Meet the Girls</a></li>
+                    <li><a href="#campfire">Campfire Stories</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#roadmap">Future</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-socials">
+                <a href="https://x.com/Aliyahumar_48" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://opensea.io/collection/classic-girls-by-aliyah" target="_blank" rel="noopener" class="social-icon" aria-label="OpenSea"><i class="fa-solid fa-ship"></i></a>
+                <a href="#join" class="btn btn-nav">Join Club</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Hand-Drawn Digital Art Collection</span>
+                <h1 class="hero-title">Welcome To The Classy Girls Club</h1>
+                <p class="hero-subtitle">A hand-drawn collection of unique girls, each with her own personality, style, story, and dream.</p>
+                <div class="hero-actions">
+                    <a href="#girls" class="btn btn-primary">Meet The Girls</a>
+                    <a href="#join" class="btn btn-secondary">Join The Community</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="frame-container">
+                    <div class="art-frame">
+                        <img src="assets/hero_campfire.jpg" alt="Classy Girls Campfire Artwork" class="hero-image">
+                    </div>
+                    <div class="frame-caption">"Around The Campfire" &mdash; Aliyah</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="indicator-line"></div>
+        </div>
+    </section>
+
+    <!-- "What is Classy Girls?" Section -->
+    <section id="about" class="about-section scroll-fade">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-accent-text">The Story</span>
+                    <h2 class="section-title">What Is Classy Girls?</h2>
+                    <p class="about-text">
+                        Classy Girls is a hand-drawn digital art collection created by Aliyah. Every character is carefully designed with her own personality, style, and story. More than a collection, Classy Girls is a growing world filled with creativity, friendship, confidence, and self-expression.
+                    </p>
+                    <p class="about-subtext">
+                        Unlike traditional collections generated purely by algorithms, every brushstroke, outfit choice, and hairstyle in Classy Girls is placed with artistic intention. It is an exploration of identity and sisterhood in the digital era.
+                    </p>
+                </div>
+                <div class="about-visuals">
+                    <div class="sketchbook-illustration">
+                        <div class="doodle doodle-1"><i class="fa-regular fa-star"></i></div>
+                        <div class="doodle doodle-2"><i class="fa-solid fa-heart"></i></div>
+                        <div class="doodle doodle-3"><i class="fa-solid fa-sparkles"></i>&sparkles;</div>
+                        <div class="artwork-preview-card">
+                            <img src="assets/nova_purple.jpg" alt="Preview Character Nova" class="preview-img">
+                            <div class="preview-meta">
+                                <span class="preview-name">Nova</span>
+                                <span class="preview-id">#001</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet The Artist Section -->
+    <section id="artist" class="artist-section scroll-fade">
+        <div class="section-container">
+            <div class="artist-grid">
+                <div class="artist-image-wrapper">
+                    <div class="artist-polaroid">
+                        <img src="assets/aliyah_portrait.jpg" alt="Portrait of Aliyah" class="artist-portrait">
+                        <div class="polaroid-label">Aliyah &mdash; Creator & Founder</div>
+                    </div>
+                </div>
+                <div class="artist-content">
+                    <span class="section-accent-text">Behind the Brush</span>
+                    <h2 class="section-title">Meet The Artist</h2>
+                    <div class="artist-bio">
+                        <p class="bio-intro">Hi, I'm Aliyah.</p>
+                        <p class="bio-text">
+                            I am a 24-year-old computer science graduate from Egypt with a deep, lifelong passion for digital illustration and traditional art.
+                        </p>
+                        <p class="bio-text">
+                            Classy Girls began as a simple sketch in my digital sketchbook and evolved into a growing collection of unique digital characters. Every girl is hand-drawn with care, inspired by individuality, creativity, friendship, and beauty.
+                        </p>
+                        <p class="bio-text">
+                            My goal is to create a world where every character feels alive and every artwork tells a story. Thank you for stepping into my sketchbook.
+                        </p>
+                    </div>
+
+                    <div class="artist-features">
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-earth-africa"></i></span>
+                            <span class="badge-text">Egyptian Creator</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-cake-candles"></i></span>
+                            <span class="badge-text">24 Years Old</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <span class="badge-text">CS Graduate</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-heart"></i></span>
+                            <span class="badge-text">Art Lover</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                            <span class="badge-text">Hand Drawn Art</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-palette"></i></span>
+                            <span class="badge-text">Digital Illustration</span>
+                        </div>
+                    </div>
+
+                    <div class="artist-signature">
+                        <span class="sig-prefix">With love,</span>
+                        <span class="signature-font">Aliyah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From Sketch To Story Section -->
+    <section id="sketchbook" class="sketchbook-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">From Sketch To Story</h2>
+            <p class="section-subtitle text-center">Take a look inside the creative journey of bringing a Classy Girl to life.</p>
+            
+            <div class="sketchbook-centerpiece scroll-fade">
+                <div class="centerpiece-polaroid">
+                    <img src="assets/aliyah_drawing.jpg" alt="Aliyah drawing on iPad" class="centerpiece-img">
+                    <div class="polaroid-label">Aliyah bringing a Classy Girl to life on her iPad</div>
+                </div>
+            </div>
+            
+            <div class="sketchbook-timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Step 1 -->
+                <div class="timeline-step step-left">
+                    <div class="step-marker">1</div>
+                    <div class="step-card">
+                        <h3 class="step-title">1. Sketching Ideas</h3>
+                        <p class="step-desc">Every character starts with raw graphite strokes on paper or initial digital outlines, exploring posture, expression, and overall vibe.</p>
+                        <span class="step-note"><i class="fa-solid fa-pencil"></i> Capturing the emotion</span>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step step-right">
+                    <div class="step-marker">2</div>
+                    <div class="step-card">
+                        <h3 class="step-title">2. Digital Drawing</h3>
+                        <p class="step-desc">Refining the raw sketches on the iPad. Clean digital line-art defines the silhouette, outfits, and expressive facial details.</p>
+                        <span class="step-note"><i class="fa-solid fa-tablet-screen-button"></i> Precision brushwork</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step step-left">
+                    <div class="step-marker">3</div>
+                    <div class="step-card">
+                        <h3 class="step-title">3. Color & Personality</h3>
+                        <p class="step-desc">Selecting the warm and vibrant palette. Hair colors, outfits, and accessories are colored to evoke a specific personality type.</p>
+                        <span class="step-note"><i class="fa-solid fa-droplet"></i> Vibrant hues & highlights</span>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step step-right">
+                    <div class="step-marker">4</div>
+                    <div class="step-card">
+                        <h3 class="step-title">4. Final Classy Girl</h3>
+                        <p class="step-desc">Adding final lighting effects, shadows, and Aliyah's hand-written signature, ready to share her story with the world.</p>
+                        <span class="step-note"><i class="fa-solid fa-certificate"></i> Signed and complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet The Girls Section -->
+    <section id="girls" class="girls-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">Meet The Girls</h2>
+            <p class="section-subtitle text-center">Hover over each profile to reveal their stories, hobbies, and dreams.</p>
+
+            <div class="character-grid">
+                <!-- Card 1: Nova -->
+                <div class="character-card" data-character="nova">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="character-img-container">
+                                <img src="assets/nova_purple.jpg" alt="Nova" class="character-img">
+                            </div>
+                            <div class="character-info">
+                                <h3 class="character-name">Nova</h3>
+                                <span class="character-role">Creative Dreamer</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="back-name">Nova</h3>
+                            <span class="back-tag">Creative Dreamer</span>
+                            <div class="back-details">
+                                <p class="back-stat"><strong>Favorite Hobby:</strong> Journaling & Stargazing</p>
+                                <p class="back-story">Nova spends her nights writing down her dreams and sketching stars. She believes that every thought can be turned into beautiful art and lives in a world of endless imagination.</p>
+                            </div>
+                            <button class="btn btn-card-detail" onclick="openCharacterModal('nova')">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Jade -->
+                <div class="character-card" data-character="jade">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="character-img-container">
+                                <img src="assets/jade_blue.jpg" alt="Jade" class="character-img">
+                            </div>
+                            <div class="character-info">
+                                <h3 class="character-name">Jade</h3>
+                                <span class="character-role">Adventure Seeker</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="back-name">Jade</h3>
+                            <span class="back-tag">Adventure Seeker</span>
+                            <div class="back-details">
+                                <p class="back-stat"><strong>Favorite Hobby:</strong> Exploring Hidden Trails</p>
+                                <p class="back-story">Jade loves exploring the wild. She is always searching for hidden trails and new sights, bringing her sketchbook along to capture every beautiful sunrise she finds.</p>
+                            </div>
+                            <button class="btn btn-card-detail" onclick="openCharacterModal('jade')">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Zara -->
+                <div class="character-card" data-character="zara">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="character-img-container">
+                                <img src="assets/zara_teal.jpg" alt="Zara" class="character-img">
+                            </div>
+                            <div class="character-info">
+                                <h3 class="character-name">Zara</h3>
+                                <span class="character-role">Fashion Enthusiast</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="back-name">Zara</h3>
+                            <span class="back-tag">Fashion Enthusiast</span>
+                            <div class="back-details">
+                                <p class="back-stat"><strong>Favorite Hobby:</strong> Fashion Styling</p>
+                                <p class="back-story">Zara expresses herself through fashion. She designs her own clothes and believes styling is a form of poetry. She loves matching vintage items with modern chic designs.</p>
+                            </div>
+                            <button class="btn btn-card-detail" onclick="openCharacterModal('zara')">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Luna -->
+                <div class="character-card" data-character="luna">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="character-img-container">
+                                <img src="assets/luna_red.jpg" alt="Luna" class="character-img">
+                            </div>
+                            <div class="character-info">
+                                <h3 class="character-name">Luna</h3>
+                                <span class="character-role">Music Lover</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="back-name">Luna</h3>
+                            <span class="back-tag">Music Lover</span>
+                            <div class="back-details">
+                                <p class="back-stat"><strong>Favorite Hobby:</strong> Playing Guitar</p>
+                                <p class="back-story">Luna lives in a world of melody. She writes songs around the campfire, weaving notes and lyrics that capture the soft secrets of the night. She believes music connects hearts.</p>
+                            </div>
+                            <button class="btn btn-card-detail" onclick="openCharacterModal('luna')">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Around The Campfire Section -->
+    <section id="campfire" class="campfire-section scroll-fade">
+        <div class="campfire-overlay"></div>
+        <div class="section-container">
+            <div class="campfire-layout">
+                <div class="campfire-visual">
+                    <div class="campfire-image-container">
+                        <img src="assets/hero_campfire.jpg" alt="Campfire scene" class="campfire-scene-img">
+                        <!-- Clickable hotspots overlaying the image representing the characters -->
+                        <div class="hotspot hotspot-nova" onclick="selectCampfireGirl('nova')" title="Nova"></div>
+                        <div class="hotspot hotspot-jade" onclick="selectCampfireGirl('jade')" title="Jade"></div>
+                        <div class="hotspot hotspot-zara" onclick="selectCampfireGirl('zara')" title="Zara"></div>
+                        <div class="hotspot hotspot-luna" onclick="selectCampfireGirl('luna')" title="Luna"></div>
+                    </div>
+                </div>
+                <div class="campfire-story-content">
+                    <span class="section-accent-text">A Magical Night</span>
+                    <h2 class="section-title">Around The Campfire</h2>
+                    <p class="campfire-intro-text">
+                        "Every Classy Girl has a story to tell. Around the campfire they share dreams, memories, adventures, laughter, and friendship. This is where stories begin and lifelong bonds are created."
+                    </p>
+                    
+                    <div class="campfire-interactive-box">
+                        <div class="interactive-instruction">
+                            <i class="fa-solid fa-hand-pointer"></i> Select a girl around the campfire to hear her story
+                        </div>
+                        <div class="campfire-selector-buttons">
+                            <button class="girl-selector active" onclick="selectCampfireGirl('nova')">Nova</button>
+                            <button class="girl-selector" onclick="selectCampfireGirl('jade')">Jade</button>
+                            <button class="girl-selector" onclick="selectCampfireGirl('zara')">Zara</button>
+                            <button class="girl-selector" onclick="selectCampfireGirl('luna')">Luna</button>
+                        </div>
+                        <div class="campfire-quote-display">
+                            <span class="quote-mark">“</span>
+                            <p id="campfire-quote">Under the starlit sky, I find my greatest inspirations. The sparks from the fire look like little stars dancing with us. I keep my notebook close, hoping to capture this magical feeling forever.</p>
+                            <span class="quote-author" id="campfire-quote-author">&mdash; Nova, Creative Dreamer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Club (Statistics) Section -->
+    <section class="club-stats-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">The Club</h2>
+            <p class="section-subtitle text-center">Fine details of our curated, hand-drawn collection.</p>
+            
+            <div class="stats-grid">
+                <!-- Stat Card 1 -->
+                <div class="stat-card glass-card">
+                    <span class="stat-icon"><i class="fa-solid fa-users-line"></i></span>
+                    <h3 class="stat-number">4,848</h3>
+                    <p class="stat-label">Girls In Collection</p>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="stat-card glass-card">
+                    <span class="stat-icon"><i class="fa-solid fa-paintbrush"></i></span>
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Hand Drawn</p>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="stat-card glass-card">
+                    <span class="stat-icon"><i class="fa-brands fa-ethereum"></i></span>
+                    <h3 class="stat-number">Ethereum</h3>
+                    <p class="stat-label">Network</p>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="stat-card glass-card">
+                    <span class="stat-icon"><i class="fa-solid fa-signature"></i></span>
+                    <h3 class="stat-number">Aliyah</h3>
+                    <p class="stat-label">Created By</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pinterest-style Gallery Section -->
+    <section id="gallery" class="gallery-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">Sketchbook Gallery</h2>
+            <p class="section-subtitle text-center">Explore the pages of Aliyah's digital sketchbook. Filter by attributes to find your favorite style.</p>
+            
+            <!-- Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Artworks</button>
+                <button class="filter-btn" data-filter="hair-purple">Purple Hair</button>
+                <button class="filter-btn" data-filter="hair-blue">Blue Hair</button>
+                <button class="filter-btn" data-filter="hair-green">Green/Teal Hair</button>
+                <button class="filter-btn" data-filter="hair-red">Red Hair</button>
+                <button class="filter-btn" data-filter="hair-black">Black Hair</button>
+                <button class="filter-btn" data-filter="hair-brown">Brown Hair</button>
+                <button class="filter-btn" data-filter="favorites">Favorites</button>
+            </div>
+
+            <!-- Gallery Masonry -->
+            <div class="gallery-masonry" id="gallery-grid">
+                <!-- Item 1: Nova -->
+                <div class="gallery-item hair-purple favorites" onclick="openLightbox(0)">
+                    <img src="assets/nova_purple.jpg" alt="Nova Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Nova #001</span>
+                        <span class="gallery-item-category">Creative Dreamer</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 2: Jade -->
+                <div class="gallery-item hair-blue favorites" onclick="openLightbox(1)">
+                    <img src="assets/jade_blue.jpg" alt="Jade Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Jade #002</span>
+                        <span class="gallery-item-category">Adventure Seeker</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 3: Zara -->
+                <div class="gallery-item hair-green" onclick="openLightbox(2)">
+                    <img src="assets/zara_teal.jpg" alt="Zara Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Zara #003</span>
+                        <span class="gallery-item-category">Fashion Enthusiast</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 4: Luna -->
+                <div class="gallery-item hair-black favorites" onclick="openLightbox(3)">
+                    <img src="assets/luna_red.jpg" alt="Luna Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Luna #004</span>
+                        <span class="gallery-item-category">Music Lover</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 5: Chloe -->
+                <div class="gallery-item hair-black" onclick="openLightbox(4)">
+                    <img src="assets/chloe_black.jpg" alt="Chloe Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Chloe #005</span>
+                        <span class="gallery-item-category">Silent Reader</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 6: Aria -->
+                <div class="gallery-item hair-blue hair-purple hair-green" onclick="openLightbox(5)">
+                    <img src="assets/aria_purple_shirt.jpg" alt="Aria Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Aria #006</span>
+                        <span class="gallery-item-category">Nature Painter</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 7: Maya -->
+                <div class="gallery-item hair-brown favorites" onclick="openLightbox(6)">
+                    <img src="assets/maya_yellow_shirt.jpg" alt="Maya Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Maya #007</span>
+                        <span class="gallery-item-category">Star Gazer</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 8: Ivy -->
+                <div class="gallery-item hair-green favorites" onclick="openLightbox(7)">
+                    <img src="assets/ivy_green_orange.jpg" alt="Ivy Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Ivy #008</span>
+                        <span class="gallery-item-category">Rebel Girl</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 9: Ruby -->
+                <div class="gallery-item hair-red" onclick="openLightbox(8)">
+                    <img src="assets/ruby_red_purple.jpg" alt="Ruby Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Ruby #009</span>
+                        <span class="gallery-item-category">Free Spirit</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 10: Violet -->
+                <div class="gallery-item hair-blue" onclick="openLightbox(9)">
+                    <img src="assets/violet_blue_purple.jpg" alt="Violet Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Violet #010</span>
+                        <span class="gallery-item-category">Dreamer</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 11: Stella -->
+                <div class="gallery-item hair-purple" onclick="openLightbox(10)">
+                    <img src="assets/stella_purple_yellow.jpg" alt="Stella Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Stella #011</span>
+                        <span class="gallery-item-category">Stargazer</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 12: Hazel -->
+                <div class="gallery-item hair-brown" onclick="openLightbox(11)">
+                    <img src="assets/hazel_brown_orange.jpg" alt="Hazel Portrait">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Hazel #012</span>
+                        <span class="gallery-item-category">Artist</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 13: Campfire -->
+                <div class="gallery-item favorites" onclick="openLightbox(12)">
+                    <img src="assets/hero_campfire.jpg" alt="Around the Campfire">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Around The Campfire</span>
+                        <span class="gallery-item-category">Group Portrait</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Item 14: Logo -->
+                <div class="gallery-item" onclick="openLightbox(13)">
+                    <img src="assets/logo.jpg" alt="Classy Girls Logo">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Classy Girls Logo</span>
+                        <span class="gallery-item-category">Official Typography</span>
+                        <i class="fa-solid fa-expand expand-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Future Of Classy Girls (Roadmap) Section -->
+    <section id="roadmap" class="roadmap-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">The Future Of Classy Girls</h2>
+            <p class="section-subtitle text-center">A roadmap built on storytelling, community, and creativity.</p>
+            
+            <div class="roadmap-grid">
+                <div class="roadmap-intro-card glass-card">
+                    <i class="fa-solid fa-compass roadmap-main-icon"></i>
+                    <h3>Our Vision</h3>
+                    <p>
+                        "I am building more than a collection. I am building a growing world of stories, creativity, and community where every girl has a place and every artwork has meaning."
+                    </p>
+                    <span class="signature-font block-sig">Aliyah</span>
+                </div>
+                
+                <div class="roadmap-timeline">
+                    <!-- Chapter 1 -->
+                    <div class="roadmap-chapter">
+                        <div class="chapter-num">Chapter 1</div>
+                        <div class="chapter-content">
+                            <h4>The Sketchbook Opens</h4>
+                            <p>Launch of the first hand-drawn Classy Girls. Developing our community around digital art collectors who value detail, authenticity, and design.</p>
+                        </div>
+                    </div>
+                    <!-- Chapter 2 -->
+                    <div class="roadmap-chapter">
+                        <div class="chapter-num">Chapter 2</div>
+                        <div class="chapter-content">
+                            <h4>Campfire Conversations</h4>
+                            <p>Introduction of member-exclusive interactive stories. Release of fine-art physical prints signed by Aliyah for initial club holders.</p>
+                        </div>
+                    </div>
+                    <!-- Chapter 3 -->
+                    <div class="roadmap-chapter">
+                        <div class="chapter-num">Chapter 3</div>
+                        <div class="chapter-content">
+                            <h4>The Creative Journal</h4>
+                            <p>Collaborations with independent clothing brands to bring Classy Girls' style into physical streetwear and accessories.</p>
+                        </div>
+                    </div>
+                    <!-- Chapter 4 -->
+                    <div class="roadmap-chapter">
+                        <div class="chapter-num">Chapter 4</div>
+                        <div class="chapter-content">
+                            <h4>Infinite Canvas</h4>
+                            <p>Interactive virtual sketchbook museum where community members can co-author character stories and see them illustrated by Aliyah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join The Club (Newsletter & Community) Section -->
+    <section id="join" class="join-section scroll-fade">
+        <div class="section-container text-center">
+            <span class="section-accent-text">Become a Member</span>
+            <h2 class="section-title">Join The Club</h2>
+            <p class="join-desc">
+                Become part of a growing community celebrating creativity, art, friendship, and self-expression.
+            </p>
+            
+            <div class="join-socials">
+                <a href="https://x.com/Aliyahumar_48" target="_blank" rel="noopener" class="btn btn-social-link X-link">
+                    <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+                </a>
+                <a href="https://opensea.io/collection/classic-girls-by-aliyah" target="_blank" rel="noopener" class="btn btn-social-link OP-link">
+                    <i class="fa-solid fa-ship"></i> OpenSea
+                </a>
+            </div>
+
+            <!-- Newsletter Form -->
+            <div class="newsletter-wrapper glass-card">
+                <h3>Subscribe to the Sketchbook</h3>
+                <p>Receive updates on new drawings, exclusive stories, and physical print releases directly from Aliyah.</p>
+                <form id="newsletter-form" class="newsletter-form" onsubmit="event.preventDefault(); handleSubscribe();">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" required aria-label="Email Address">
+                        <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+                    </div>
+                    <div id="subscribe-message" class="subscribe-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="faq-section scroll-fade">
+        <div class="section-container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <p class="section-subtitle text-center">Curious about the Classy Girls world? Find answers below.</p>
+            
+            <div class="faq-accordion-container">
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is Classy Girls?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Classy Girls is a hand-drawn digital art collection created by Aliyah. Every character is carefully designed with her own personality, style, and story. More than a collection, Classy Girls is a growing world filled with creativity, friendship, confidence, and self-expression.</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How many girls are in the collection?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The collection will consist of 4,848 unique digital artworks on the Ethereum network. Each artwork represents an individual girl with her own dreams and styles.</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who created the artwork?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All artworks are created by Aliyah, a digital illustrator and founder. Every piece starts as a hand-drawn concept before being digitized, colored, and completed with Aliyah's signature styling.</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Where can I collect them?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Classy Girls can be collected on secondary NFT platforms such as OpenSea. Follow our social channels for announcements on the release timeline and contract details.</p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will there be future collections?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. The Classy Girls world is designed to grow. We plan to expand the universe with new characters, stories, street-wear lines, and interactive experiences co-created by our community members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo-area">
+                    <img src="assets/logo.jpg" alt="Classy Girls Logo" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="logo-fallback" style="display: none;">Classy Girls</span>
+                </a>
+                <p class="footer-tagline">Celebrating art, sisterhood, and self-expression.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#artist">The Artist</a></li>
+                    <li><a href="#girls">Meet the Girls</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://x.com/Aliyahumar_48" target="_blank" rel="noopener">X (Twitter)</a></li>
+                    <li><a href="https://opensea.io/collection/classic-girls-by-aliyah" target="_blank" rel="noopener">OpenSea</a></li>
+                    <li><a href="#join">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Classy Girls by Aliyah. All rights reserved.</p>
+                <div class="footer-socials-bottom">
+                    <a href="https://x.com/Aliyahumar_48" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://opensea.io/collection/classic-girls-by-aliyah" target="_blank" rel="noopener" aria-label="OpenSea"><i class="fa-solid fa-ship"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Character Detailed Modal -->
+    <div id="character-modal" class="modal character-modal" onclick="closeCharacterModal()">
+        <div class="modal-content glass-card" onclick="event.stopPropagation()">
+            <button class="close-modal" onclick="closeCharacterModal()">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image-wrapper">
+                    <img id="modal-char-img" src="" alt="Character artwork">
+                </div>
+                <div class="modal-info-wrapper">
+                    <h3 id="modal-char-name">Nova</h3>
+                    <span id="modal-char-tag" class="char-tag">Creative Dreamer</span>
+                    <div class="modal-body-content">
+                        <div class="char-meta-row">
+                            <span class="meta-label"><i class="fa-solid fa-heart"></i> Hobby:</span>
+                            <span id="modal-char-hobby" class="meta-value">Journaling & Stargazing</span>
+                        </div>
+                        <div class="char-story-section">
+                            <h4>Her Story</h4>
+                            <p id="modal-char-story">Detailed story content will load dynamically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightbox-modal" class="modal lightbox-modal" onclick="closeLightbox()">
+        <button class="close-lightbox" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); changeLightboxItem(-1)">&lsaquo;</button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); changeLightboxItem(1)">&rsaquo;</button>
+        
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Zoomed artwork">
+            <div class="lightbox-caption">
+                <h4 id="lightbox-title">Artwork Title</h4>
+                <p id="lightbox-category">Category</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
